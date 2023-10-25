@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+/*body{
+    background-color: #222;
+    background-image: url("https://i.pinimg.com/564x/a6/c8/04/a6c804ae59e8089d867a04d3cbf0b826.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}*/
+body:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url("https://i.pinimg.com/564x/5c/4d/64/5c4d64fb35fc67e6f480229227a75277.jpg") no-repeat 20% 20%;
+	background-size:cover;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(150deg,#30cca3,#8372cc);
+    color: #000000;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding:40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.search input{
+    border: 0;
+    outline:0;
+    background:#ebfffc ;
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline:0;
+    background:#ebfffc ;
+    border-radius: 20px;
+    width:70px;
+    height:40px;
+    cursor: pointer;
+    background-color: rgb(216, 219, 221);
+}
+.weathericon{
+    width:170px;
+    margin-top: 30px;
+
+}
+.weather h1{
+    font-size: 80px ;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px ;
+    font-weight: 400;
+    margin-top: -10px ;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20 px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 5 px;
+
+}
+.humidity{
+    font-size:28px;
+    margin-top: -6px;
+}
+.wind{
+    font-size:25px;
+    margin-top: -6px;
+    padding-right: -30px;
+}
+#favoriteBtn{
+    border: 0;
+    outline:0;
+    background:#ebfffc ;
+    border-radius: 20px;
+    width:120px;
+    height:50px;
+    cursor: pointer;
+    background-color: rgb(216, 219, 221);
+    text-align: center;
+    margin-bottom: 10%;
+}
+#favoriteCitiesList{
+    font-size: 28px;
+    padding-top: 20px;
+    padding-right: 25px;
+    justify-content: space-between;
+    color: #222;
+}
+#favoriteBtn:hover{
+    background-color: rgb(48, 68, 223);
+    border:solid 2px black ;
+    color: #fff;
+}
+.search button:hover{
+    border: solid 2px rgb(249, 249, 249);
+    background-color: #222;
+    color: #ebfffc;
+}
+.weather{
+    display: none;
+}
